@@ -2,7 +2,7 @@ addons:
   sonarcloud:
     organization: "gimpneek-github"
     token:
-      secure: $SONAR_TOKEN
+      secure: $SONARQUBE_TOKEN
 language: python
 python:
   - 3.6
