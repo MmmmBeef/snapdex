@@ -1,5 +1,11 @@
+addons:
+  sonarcloud:
+    organization: "gimpneek-github"
+    token:
+      secure: $SONAR_TOKEN
 language: python
 python:
   - 3.6
 script:
   - echo "This will do stuff"
+  - sonar-scanner
