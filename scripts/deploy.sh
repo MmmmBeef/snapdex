@@ -16,4 +16,4 @@ sudo apt-get install jq -y
 #docker push $IMAGE_REPO_URL:latest
 
 # update an AWS ECS service with the new image
-ecs-deploy -c $CLUSTER_NAME -n $SERVICE_NAME -i $IMAGE_REPO_URL:latest
+bash ecs-deploy.sh -c $CLUSTER_NAME -n $SERVICE_NAME -i $IMAGE_REPO_URL:latest
