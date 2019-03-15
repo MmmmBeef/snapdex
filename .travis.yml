@@ -9,3 +9,8 @@ python:
 script:
   - echo "This will do stuff"
   - sonar-scanner
+deploy:
+  provider: script
+  script: bash scripts/deploy.sh
+  on:
+    branch: feature/adding-deploy-script
