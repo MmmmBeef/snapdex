@@ -1,5 +1,5 @@
 # install AWS SDK
-pip install --user awscli
+pip install awscli
 export PATH=$PATH:$HOME/.local/bin
 
 # install necessary dependency for ecs-deploy

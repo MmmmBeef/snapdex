@@ -3,6 +3,8 @@ addons:
     organization: "gimpneek-github"
     token:
       secure: $SONARQUBE_TOKEN
+services:
+  - docker
 language: python
 python:
   - 3.6
