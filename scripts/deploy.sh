@@ -8,7 +8,7 @@ sudo apt-get update -y
 sudo apt-get install jq -y
 
 # or login DockerHub
-docker login --username $DOCKER_HUB_USER --password $DOCKER_HUB_PASSWORD
+echo $DOCKER_HUB_PASSWORD | docker login --username $DOCKER_HUB_USER --password-stdin
 
 # build the docker image and push to an image repository
 docker build -t $IMAGE_REPO_URL .
