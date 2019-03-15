@@ -3,9 +3,9 @@ pip install awscli
 export PATH=$PATH:$HOME/.local/bin
 
 # install necessary dependency for ecs-deploy
-add-apt-repository ppa:eugenesan/ppa
-apt-get update
-apt-get install jq -y
+sudo add-apt-repository ppa:eugenesan/ppa
+sudo apt-get update
+sudo apt-get install jq -y
 
 # or login DockerHub
 docker login --username $DOCKER_HUB_USER --password $DOCKER_HUB_PASSWORD
